@@ -1,0 +1,72 @@
+.portfolio-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include mq(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.portfolio-buttons-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
+
+  @include mq(tablet) {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+  }
+  @include mq(desktop) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+.portfolio-buttons-list .item {
+  @include mq(mobile) {
+    margin-right: 8px;
+    margin-bottom: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:nth-child(n + 4) {
+      margin-bottom: 0;
+    }
+  }
+  @include mq(tablet) {
+    margin-bottom: 0;
+  }
+  @include mq(desktop) {
+    margin-right: 8px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.portfolio-button {
+  padding: 6px 22px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  border: 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--button-portfolio-colour);
+  color: var(--main-text-title-color);
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    color: #ffffff;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+}

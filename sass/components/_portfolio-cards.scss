@@ -1,0 +1,109 @@
+.portfolio-section-list {
+  margin-top: 50px;
+
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+  }
+  @include mq(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+.portfolio-section-list .item {
+  @include mq(mobile-only) {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include mq(tablet) {
+    display: flex;
+  }
+
+  @include mq(desktop) {
+    margin: 0;
+  }
+}
+.card-link {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  &:hover .product-description {
+    transform: translateY(0);
+  }
+  @include mq(mobile) {
+    display: block;
+    width: 450px;
+  }
+  @include mq(tablet) {
+    display: flex;
+    flex-direction: column;
+    width: 354px;
+  }
+  @include mq(desktop) {
+    display: block;
+    width: 370px;
+  }
+}
+
+.image-cover {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-description {
+  flex-grow: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  font-size: 15px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include mq(mobile) {
+    padding: 63px 24px;
+    font-size: 18px;
+  }
+}
+
+.portfolio-title {
+  margin-bottom: 4px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-text-title-color);
+}
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: var(--second-text-title-color);
+}
+.card-container {
+  flex-grow: 1;
+  padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}

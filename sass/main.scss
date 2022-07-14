@@ -1,0 +1,57 @@
+@import './base/reset';
+@import './utils/vars';
+@import './utils/mixins';
+@import './base/base';
+@import './base/animation';
+@import './utils/vendors';
+
+// ================HEADER======================
+
+@import './components/header';
+@import './components/mobile-menu';
+
+// ----------------HERO--------------
+
+@import './components/hero';
+
+// ----------------BENEFITS-SECTION--------------
+
+@import './components/benefits-sec';
+
+// ----------------WORK-SECTION--------------
+
+@import './components/work-sec';
+
+// ----------------TEAM-SECTION--------------
+
+@import './components/team-sec';
+
+// ----------------CLIENTS-SECTION--------------
+
+@import './components/clients-sec';
+
+// ==============PAGE-PORTFOLIO======================
+
+// ----------------PORTFOLIO-BTNS--------------
+
+@import './components/portfolio-btns';
+
+// ----------------PORTFOLIO-CARDS--------------
+
+@import './components/portfolio-cards';
+
+// ==============FOOTER======================
+
+@import './components/footer';
+
+// ----------------FOOTER-form--------------
+
+@import './components/footer-form.scss';
+
+// ----------------MODAL_WIN--------------
+
+@import './components/modal-win';
+
+// ----------------FORM--------------
+
+@import './components/form';
