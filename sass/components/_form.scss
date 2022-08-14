@@ -115,6 +115,7 @@
   font-size: 12px;
   line-height: 1.16;
   top: 0;
+  user-select: none;
 
   @include mq(desktop) {
     position: relative;
