@@ -1,4 +1,8 @@
 body {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--second-text-title-color);
   font-family: var(--main-font);
   background-color: #ffff;
   &.no-scroll {

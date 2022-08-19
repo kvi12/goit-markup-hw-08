@@ -44,6 +44,10 @@ img {
 }
 
 body {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--second-text-title-color);
   font-family: var(--main-font);
   background-color: white;
 }
@@ -163,8 +167,8 @@ body.no-scroll {
 .logo-header {
   display: inline-block;
   font-family: Raleway;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -373,6 +377,13 @@ body.no-scroll {
   }
 }
 
+.menu-button:hover {
+  fill: var(--hover-buton-color);
+  transition-property: color;
+  transition-duration: 250 ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .menu {
   position: fixed;
   top: 0;
@@ -436,10 +447,13 @@ body.no-scroll {
 }
 .menu__nav-link:hover, .menu__nav-link:focus {
   color: var(--hover-buton-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu__contacts-list {
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 }
 
 .menu__contacts-item {
@@ -476,13 +490,11 @@ body.no-scroll {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: -10px;
+  gap: 10px;
 }
 
 .menu__social-item {
   position: relative;
-  margin-right: 10px;
-  margin-bottom: 10px;
 }
 .menu__social-item:last-child {
   margin-right: 0;
@@ -511,11 +523,6 @@ body.no-scroll {
 
 .current {
   color: var(--hover-buton-color);
-}
-
-.menu-icon__open:hover,
-.menu-icon__close:hover {
-  fill: var(--hover-buton-color);
 }
 
 .hero {
@@ -713,13 +720,6 @@ body.no-scroll {
   }
 }
 
-.benefits-list__text {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: var(--second-text-title-color);
-}
-
 @media screen and (max-width: 1199.98px) {
   .work {
     display: none;
@@ -886,7 +886,6 @@ body.no-scroll {
   justify-content: center;
   width: 44px;
   height: 44px;
-  background-color: var(--hero-title-color);
   border-radius: 50%;
   transition-property: background-color;
   transition-duration: 250ms;
@@ -894,6 +893,7 @@ body.no-scroll {
 }
 .link-team-icon:hover, .link-team-icon:focus {
   background-color: var(--hover-buton-color);
+  fill: var(--header-color);
 }
 
 .icon-item {
@@ -1030,7 +1030,7 @@ body.no-scroll {
 .portfolio-buttons-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 15px 8px;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
@@ -1180,6 +1180,7 @@ body.no-scroll {
   width: 100%;
   height: 100%;
   padding: 15px;
+  overflow: auto;
   font-size: 15px;
   line-height: 1.55;
   letter-spacing: 0.03em;
@@ -1227,6 +1228,13 @@ body.no-scroll {
   padding-bottom: 60px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .footer-web {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer-web {
     display: flex;
@@ -1293,9 +1301,6 @@ body.no-scroll {
   color: #2196f3;
 }
 
-.footer-list {
-  margin-bottom: 60px;
-}
 @media screen and (min-width: 1200px) {
   .footer-list {
     margin: 0;
@@ -1320,7 +1325,6 @@ body.no-scroll {
 .footer-web-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
 }
 
 .footer-web-list .item {
@@ -1668,6 +1672,7 @@ body.no-scroll {
 .policy-agreement {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
 }
 

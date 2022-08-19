@@ -93,7 +93,7 @@
   justify-content: center;
   width: 44px;
   height: 44px;
-  background-color: var(--hero-title-color);
+  // background-color: var(--hero-title-color);
   border-radius: 50%;
   transition-property: background-color;
   transition-duration: 250ms;
@@ -101,6 +101,7 @@
   &:hover,
   &:focus {
     background-color: var(--hover-buton-color);
+    fill: var(--header-color);
   }
 }
 

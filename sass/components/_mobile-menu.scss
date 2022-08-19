@@ -17,6 +17,12 @@
     display: none;
   }
 }
+.menu-button:hover {
+  fill: var(--hover-buton-color);
+  transition-property: color;
+  transition-duration: 250 ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .menu {
   position: fixed;
   top: 0;
@@ -74,10 +80,13 @@
   &:hover,
   &:focus {
     color: var(--hover-buton-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .menu__contacts-list {
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 }
 .menu__contacts-item {
   margin-bottom: 32px;
@@ -108,12 +117,11 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: -10px;
+  gap: 10px;
 }
 .menu__social-item {
   position: relative;
-  margin-right: 10px;
-  margin-bottom: 10px;
+
   &:last-child {
     margin-right: 0;
   }
@@ -140,8 +148,4 @@
 }
 .current {
   color: var(--hover-buton-color);
-}
-.menu-icon__open:hover,
-.menu-icon__close:hover {
-  fill: var(--hover-buton-color);
 }

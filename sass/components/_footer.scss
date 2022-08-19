@@ -5,6 +5,11 @@
 }
 
 .footer-web {
+  @include mq(mobile-only) {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
   @include mq(tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -65,7 +70,6 @@
 }
 
 .footer-list {
-  margin-bottom: 60px;
   @include mq(desktop) {
     margin: 0;
   }
@@ -85,7 +89,6 @@
 .footer-web-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
 }
 .footer-web-list .item {
   margin-right: 10px;
