@@ -29,6 +29,9 @@
     gap: 0;
   }
 }
+// .clients-list .item {
+//   flex-basis: calc((100% - 30px) / 2);
+// }
 .clients-list .item {
   @media screen and (max-width: 767px) {
     flex-basis: calc((100% - 30px) / 2);

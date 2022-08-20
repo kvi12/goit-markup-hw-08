@@ -22,9 +22,10 @@
     margin-bottom: 50px;
   }
 }
-.our-team-list {
+.card-set {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
   @include mq(tablet) {
     gap: 30px;
   }
@@ -42,9 +43,9 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 30px;
-  width: 450px;
+
   @include mq(tablet) {
-    width: 354px;
+    flex-basis: calc((100% - 30px) / 2);
   }
   @include mq(desktop) {
     margin-right: 30px;

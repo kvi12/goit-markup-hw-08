@@ -27,6 +27,8 @@
   position: fixed;
   top: 0;
   left: 0;
+  overflow: auto;
+  gap: 64px;
   display: block;
   display: flex;
   flex-direction: column;
@@ -86,7 +88,6 @@
   }
 }
 .menu__contacts-list {
-  margin-bottom: 64px;
 }
 .menu__contacts-item {
   margin-bottom: 32px;
